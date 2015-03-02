@@ -5,6 +5,60 @@
 @import 'bootstrap/theme';
 
 
+
+
+
+
+/* PRICING TABLES */
+.panel {
+
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all .5s ease-in-out; /* Safari and Chrome */
+    -o-transition: all .5s ease-in-out; /* Opera */
+    -ms-transition: all .5s ease-in-out; /* IE9 (maybe) */ 	
+  
+}
+
+.panel:hover {
+	transform: scale(1.02);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Fixed navbar så att den har en padding top */
 body {
 

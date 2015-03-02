@@ -4,4 +4,9 @@ Rails.application.routes.draw do
 
   root 'startsida#index'
 
+
+get 'startsida/pricing'
+  match '/pricing', to: 'startsida#pricing', via: 'get'
+
+
 end
