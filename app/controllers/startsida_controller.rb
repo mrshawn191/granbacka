@@ -4,4 +4,8 @@ class StartsidaController < ApplicationController
 
   def pricing
   end
+
+
+  def schema
+  end
 end

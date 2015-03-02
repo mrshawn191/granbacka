@@ -42,18 +42,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <%= link_to image_tag("granbacka.gif"), root_path, class:"navbar-brand" %>
+            <%= link_to image_tag("granbacka.gif"), root_path, class: "navbar-brand" %>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Schema</a></li>
-              <li><a href="#">Bokning</a></li>
-              <li><a href="#">Pass</a></li>
-              <li><a href="#">Gym</a></li>
-              <li><a href="#">Priser</a></li>
-              <li><a href="#">Massage &amp; Kiropraktik</a></li>
-              <li><a href="#">Övrigt</a></li>
-
+              <li><%= link_to 'Schema', schema_path, class: "glyphicon glyphicon-calendar" %></li>
+              <li><%= link_to 'Bokning', schema_path, class: "glyphicon glyphicon-plus" %></li>
+              <li><%= link_to 'Pass', schema_path, class: "glyphicon glyphicon-fire" %></li>
+              <li><%= link_to 'Gym', schema_path, class: "glyphicon glyphicon-menu-hamburger" %></li>
+              <li><%= link_to 'Priser', schema_path, class: "glyphicon glyphicon-credit-card" %></li>
+              <li><%= link_to 'Massage', schema_path, class: "glyphicon glyphicon-bed" %></li>
+              <li><%= link_to 'Övrigt', schema_path, class: "glyphicon glyphicon-bullhorn" %></li>
 
             </ul>
           </div><!--/.nav-collapse -->
