@@ -4,6 +4,13 @@ Rails.application.routes.draw do
 
   root 'startsida#index'
 
+  resources :sessions,      only: [:new, :create, :destroy]
+
+
+
+get 'startsida/login'
+	  match '/login', to: 'startsida#login', via: 'get'
+
 
 get 'startsida/pricing'
   match '/pricing', to: 'startsida#pricing', via: 'get'
