@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Granbacka Gym </title>
+    <title>Granbacka Gym &amp; Motion</title>
     <%= stylesheet_link_tag "application", media: "all",
                                            "data-turbolinks-track" => true %>
     <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
@@ -11,17 +11,17 @@
   </head>
   <body>
     <%= render 'layouts/header'%>
+    
+
+
     <div class="container">
-      
       <!-- this is flash input -->
       <% flash.each do |key, value| %>
         <div class="alert alert-<%= key %>"><%= value %></div>
       <% end %>
       
       <%= yield %>
+      </div>
 
-      
-
-    </div>
   </body>
 </html>

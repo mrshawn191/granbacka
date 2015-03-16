@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
   resources :sessions,      only: [:new, :create, :destroy]
 
+  resources :articles
 
 
 get 'startsida/login'
@@ -16,8 +17,8 @@ get 'startsida/pricing'
   match '/pricing', to: 'startsida#pricing', via: 'get'
 
 
-get 'startsida/schema'
-  match '/schema', to: 'startsida#schema', via: 'get'
+get 'articles/index'
+  match '/schema', to: 'articles#index', via: 'get'
 
 
 get 'startsida/bokning'
