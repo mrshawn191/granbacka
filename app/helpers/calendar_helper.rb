@@ -4,7 +4,7 @@ module CalendarHelper
   end
 
   class Calendar < Struct.new(:view, :date, :callback)
-    HEADER = %w[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
+    HEADER = %w[Söndag Måndag Tisdag Onsdag Torsdag Fredag Lördag]
     START_DAY = :sunday
 
     delegate :content_tag, to: :view
@@ -19,6 +19,11 @@ module CalendarHelper
       content_tag :tr do
         HEADER.map { |day| content_tag :th, day }.join.html_safe
       end
+    end
+
+
+    #TEST för veckodag
+    def day_rows
     end
 
     def week_rows

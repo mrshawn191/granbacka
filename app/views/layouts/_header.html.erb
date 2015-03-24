@@ -5,31 +5,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Navbar Template for Bootstrap</title>
+    <link href='assets/style.css' rel='stylesheet' />
 
-    <!-- Bootstrap core CSS -->
-    <link href="../../dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href='assets/bootstrap.css' rel='stylesheet' />
+    <link href='assets/bootstrap-theme.min.css' rel='stylesheet' />
+    <link href='assets/bootstrap.css.map' rel='stylesheet' />
+    <link href='assets/startsida.css' rel='stylesheet' />
+    
+    <script src='assets/jquery.min.js'></script>
+    <script src="assets/main.js"></script>
+    <script src="assets/modernizr.js"></script> 
+    <script src='assets/bootstrap.min.js'></script>
 
-    <!-- Custom styles for this template -->
-    <link href="navbar.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
+
+<div class="cd-panel from-right">
+  <header class="cd-panel-header">
+    <h1>Öppettider &amp; Kontakta oss</h1><br><br>
+    <a href="#0" class="cd-panel-close">Close</a>
+  </header>
+
+  <div class="cd-panel-container">
+    <div class="cd-panel-content">
+    <br>
+      <p><strong>Guldkortskunder</strong></p>
+      <p>Dygnet runt</p>
+      <p><strong>Måndag - Fredag</strong></p>
+      <p>06.30 - 21.30</p>
+      <p><strong>Lördag - Söndag</strong></p>
+      <p>09.30 - 19.00</p>
+
+      <br>
+      <p><strong>Adress: </strong></p>
+      <p>Emmylundsvägen 4</p>
+      <p>171 72 Solna</p>
+      <p>T-Bana: Västra Skogen</p>
+
+      <p><strong>Telefon: </strong></p>
+      <p>08-82 34 39</p>
+
+      <p><strong>Telefax: </strong></p>
+      <p>08-82 10 06</p>
+
+      <p><strong>E-post: </strong></p>
+      <p>info@granbacka.com</p>
+    </div>
+  </div>
+
+</div>
+
+    <center><a href="<%= root_path %>"><img src ="../assets/granbacka.gif"></a></center> <br><br>
     <div class="container">
 
       <!-- Static navbar -->
@@ -42,18 +71,17 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <%= link_to image_tag("granbacka.gif"), root_path, class: "navbar-brand" %>
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li><%= link_to ' Schema', schema_path, class: "glyphicon glyphicon-calendar" %></li>
-              <li><%= link_to ' Bokning', bokning_path, class: "glyphicon glyphicon-plus" %></li>
-              <li><%= link_to ' Pass', pass_path, class: "glyphicon glyphicon-fire" %></li>
-              <li><%= link_to ' Gym', gym_path, class: "glyphicon glyphicon-menu-hamburger" %></li>
-              <li><%= link_to ' Priser', pricing_path, class: "glyphicon glyphicon-credit-card" %></li>
-              <li><%= link_to ' Massage', massage_path, class: "glyphicon glyphicon-bed" %></li>
-              <li><%= link_to ' Övrigt', ovrigt_path, class: "glyphicon glyphicon-bullhorn" %></li>
-
+              <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Schema</span></a></li>
+              <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
+              <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Pass</span></a></li>
+              <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
+              <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
+              <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Massage</span></a></li>
+              <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
+              <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Tider</span></a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
@@ -64,12 +92,5 @@
     </div> <!-- /container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

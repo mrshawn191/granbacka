@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8' />
+
+<link href='assets/style.css' rel='stylesheet' />
+
+
+<!-- side navbar -->
+<script src="assets/main.js"></script>
+<script src="assets/modernizr.js"></script> 
+
+<link href='assets/fullcalendar.css' rel='stylesheet' />
+<script src='assets/moment.min.js'></script>
+<script src='assets/jquery.min.js'></script>
+<script src='assets/fullcalendar.js'></script>
+
+
+
+
+
+<script src='assets/lang-all.js'></script>
+
+
+
+<script>
+
+  $(document).ready(function() {
+
+    $('#calendar').fullCalendar({
+      lang: 'sv',
+      header: {
+        left: 'prev,next today',
+        center: 'title',
+        right: 'month,agendaWeek,agendaDay'
+      },
+      views: {
+        week: {
+        columnFormat: 'ddd M/D',
+        },
+        day:{
+        columnFormat: 'dddd M/D',
+        },
+      },
+      axisFormat: 'H:mm',
+      titleFormat: 'MMMM YYYY',
+      defaultView: 'agendaWeek',
+      editable: false,
+      eventLimit: true,
+      dayNames: ['Söndag','Måndag', 'Tisdag', 'Onsdag', 'Torsdag', 'Fredag', 'Lördag'],
+      monthNames: ['Januari', 'Februari', 'Mars', 'April', 'Maj', 'Juni', 'Juli', 'Augusti', 'September', 'Oktober', 'November', 'December'],
+      dayNamesShort: ['Sön', 'Mån', 'Tis', 'Ons', 'Tors', 'Fre', 'Lör'],
+      minTime: "09:00:00",
+      maxTime: "22:00:00",
+      events: '/events.json'
+      
+    });
+    
+  });
+
+</script>
+
+</head>
+<body>
+
+
+
+
+<div class="cd-panel from-right">
+  <header class="cd-panel-header">
+    <h1>Öppettider &amp; Kontakta oss</h1><br><br>
+    <a href="#0" class="cd-panel-close">Close</a>
+  </header>
+
+  <div class="cd-panel-container">
+    <div class="cd-panel-content">
+    <br>
+      <p><strong>Guldkortskunder</strong></p>
+      <p>Dygnet runt</p>
+      <p><strong>Måndag - Fredag</strong></p>
+      <p>06.30 - 21.30</p>
+      <p><strong>Lördag - Söndag</strong></p>
+      <p>09.30 - 19.00</p>
+
+      <br>
+      <p><strong>Adress: </strong></p>
+      <p>Emmylundsvägen 4</p>
+      <p>171 72 Solna</p>
+      <p>T-Bana: Västra Skogen</p>
+
+      <p><strong>Telefon: </strong></p>
+      <p>08-82 34 39</p>
+
+      <p><strong>Telefax: </strong></p>
+      <p>08-82 10 06</p>
+
+      <p><strong>E-post: </strong></p>
+      <p>info@granbacka.com</p>
+    </div>
+  </div>
+
+</div>
+
+
+<br>
+<div class="container-aktivitet">
+<div class="row">
+<div class="col-md-1"></div><div class="col-md-1"></div>
+<div class="col-md-1">
+<%= link_to 'Ny Aktivitet', new_event_path, class: "btn btn-primary" %>
+</div>
+</div>
+</div><br>
+
+
+  <div id='calendar'></div>
+
+<br><br>
+<div class="container">
+<div class="row">
+
+<p>För pass märkta med en * krävs att du bokar via vårt bokningssystem, du kan också boka genom att ringa receptionen, 08-82 34 39. Alla våra träningspass börjar med uppvärmning och avslutas med stretch. När det inte står någon tid angiven är passen cirka 55 minuter långa. De namn som står angivna under respektive pass är ordinarie instruktör. För information om vikarier eller övriga avvikelser, håll utkik på hemsidans första sida eller ring till oss, tfn 08-82 34 39.</p>
+
+</div></div><br><br>
+</body>
+</html>

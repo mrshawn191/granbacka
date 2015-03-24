@@ -4,24 +4,51 @@
 <html>
   <head>
     <title>Granbacka Gym &amp; Motion</title>
-    <%= stylesheet_link_tag "application", media: "all",
-                                           "data-turbolinks-track" => true %>
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= csrf_meta_tags %>
+
   </head>
   <body>
-    <%= render 'layouts/header'%>
     
+      <%= render 'layouts/header'%>
 
+      <%= yield %> <!-- Här laddas ALLT -->
 
-    <div class="container">
-      <!-- this is flash input -->
-      <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
-      
-      <%= yield %>
-      </div>
+<%= render 'layouts/footer' %>
 
+<div class="cd-panel from-right">
+  <header class="cd-panel-header">
+    <h1>Öppettider &amp; Kontakta oss</h1><br><br>
+    <a href="#0" class="cd-panel-close">Close</a>
+  </header>
+
+  <div class="cd-panel-container">
+    <div class="cd-panel-content">
+    <br>
+      <p><strong>Guldkortskunder</strong></p>
+      <p>Dygnet runt</p>
+      <p><strong>Måndag - Fredag</strong></p>
+      <p>06.30 - 21.30</p>
+      <p><strong>Lördag - Söndag</strong></p>
+      <p>09.30 - 19.00</p>
+
+      <br>
+      <p><strong>Adress: </strong></p>
+      <p>Emmylundsvägen 4</p>
+      <p>171 72 Solna</p>
+      <p>T-Bana: Västra Skogen</p>
+
+      <p><strong>Telefon: </strong></p>
+      <p>08-82 34 39</p>
+
+      <p><strong>Telefax: </strong></p>
+      <p>08-82 10 06</p>
+
+      <p><strong>E-post: </strong></p>
+      <p>info@granbacka.com</p>
+    </div>
+  </div>
+
+</div>
+
+<script src='assets/bootstrap.min.js'></script>
   </body>
 </html>

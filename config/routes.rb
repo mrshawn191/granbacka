@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  resources :events
+
   get 'startsida/index'
 
 
@@ -17,8 +19,11 @@ get 'startsida/pricing'
   match '/pricing', to: 'startsida#pricing', via: 'get'
 
 
-get 'articles/index'
-  match '/schema', to: 'articles#index', via: 'get'
+get 'events/index'
+  match '/schema', to: 'events#index', via: 'get'
+
+get 'events/new'
+  match '/new', to: 'events#new', via: 'get'
 
 
 get 'startsida/bokning'
