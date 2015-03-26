@@ -1,0 +1,68 @@
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+
+.containerkorv {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerkorv .jumbotronkorv,
+.container-fluid .jumbotronkorv {
+  border-radius: 15px;
+}
+
+ .containerkorv .jumbotronkorv,
+  .container-fluid .jumbotronkorv {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+
+
+/* Custom page footer */
+
+/* Customize container */
+@media (min-width: 768px) {
+  .containerkorv {
+    max-width: 730px;
+  }
+}
+.containerkorv-narrow > hr {
+  margin: 10px 0;
+}
+
+.jumbotronkorv {
+  padding: 35px 15px;
+  margin-bottom: 10px;
+  color: inherit;
+  background-color: #3d6db2;
+  border-bottom: 10px solid #e5e5e5;
+
+}
+
+/* Main marketing message and sign up button */
+.jumbotronkorv {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+.jumbotronkorv .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+
+}

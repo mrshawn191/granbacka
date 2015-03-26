@@ -7,6 +7,77 @@ Primary style
 
 
 
+.facebook {
+
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out; /* Firefox 4 */
+    -webkit-transition: all .5s ease-in-out; /* Safari and Chrome */
+    -o-transition: all .5s ease-in-out; /* Opera */
+    -ms-transition: all .5s ease-in-out; /* IE9 (maybe) */  
+  
+}
+
+.facebook:hover {
+  transform: scale(1.4);
+}
+
+
+
+
+ul#navigation {
+    position: absolute;
+    top: 345px;
+
+    /* */
+    right: 15px;
+    list-style: none;
+    z-index:9999;
+}
+ul#navigation li {
+
+    /* Ändra bredden här */
+    padding-top: 7px;
+}
+ul#navigation li a {
+    display: block;
+    margin-left: 10px;
+    width: 50px;
+
+    /* Ändra höjden här */
+    height: 50px;
+
+
+    background-repeat:no-repeat;
+    background-position:center center;
+    /*-moz-box-shadow: 0px 4px 3px #000;
+    -webkit-box-shadow: 0px 4px 3px #000;
+    */
+    opacity: 0.8;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=80);
+}
+ul#navigation .home a{
+
+    background-image: url(../assets/facebook.png);
+}
+ul#navigation .about a      {
+    background-image: url(../assets/instagram.png);
+}
+ul#navigation .search a      {
+    background-image: url(../assets/youtube.png);
+}
+
+ul#navigation .photos a     {
+    background-image: url(../assets/twitter.png);
+}
+
+
+
+
+
+
+
+
+
 a {
   color: #89ba2c;
   text-decoration: none;

@@ -23,6 +23,8 @@
   border-color: #1B931F;
 }
 
+
+/* JumboTRON för startsidan */
 .jumbotron {
   position: relative;
   padding: 30px 15px;
@@ -80,7 +82,7 @@ body,
 }
 
 .panel:hover {
-	transform: scale(1.06);
+	transform: scale(1.03);
 }
 /*   -----------------------------------------   */
 
