@@ -26,6 +26,9 @@ get 'events/new'
   match '/new', to: 'events#new', via: 'get'
 
 
+match 'events/:id/edit' => 'events#edit', via: [:get, :post]
+
+
 get 'startsida/bokning'
   match '/bokning' => redirect('http://kund.pastell16.pastelldata.se/UnitRedirect.aspx?UNIT=1564'), via: 'get'
 
