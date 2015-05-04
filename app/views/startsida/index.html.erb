@@ -17,12 +17,14 @@
         <script src='assets/pizza.js'></script>
 
 
+
     <link href="assets/startsida.css" rel="stylesheet">
         <link href="assets/ovrigt.css" rel="stylesheet">
 
     <script src='assets/bootstrap.min.js'></script>
 
         <link href="assets/googlemaps.css" rel="stylesheet">
+    <!-- <link href="assets/carousel.css" rel="stylesheet"> -->
 
 
 <script type="text/javascript">
@@ -51,8 +53,8 @@ $('.carousel').carousel();
     <!-- Carousel
     ================================================== -->
     <div class="container">
-    <div class="row">
-    <div class="col-md-6">
+    <div class="row no-gutter">
+    <div class="col-md-8">
     <div id="myCarousel" class="carousel slide carousel-fade" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
@@ -60,28 +62,16 @@ $('.carousel').carousel();
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
       </ol>
+      <!-- Wrapper for slides -->
       <div class="carousel-inner" role="listbox">
         <div class="item active">
 			<%=link_to image_tag("111.jpg", :alt => "Slide0"), {:class => "img-responsive", :alt => "Responsive image"} %>  
-		<div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
         </div>
         <div class="item">
 			<%=link_to image_tag("222.jpg", :alt => "Slide0"), {:class => "img-responsive", :alt => "Responsive image"} %>  
-          <div class="container">
-            <div class="carousel-caption">
-            </div>
-          </div>
         </div>
         <div class="item">
 			<%=link_to image_tag("333.jpg", :alt => "Slide0"), {:class => "img-responsive", :alt => "Responsive image"} %>  
-          <div class="container">
-            <div class="carousel-caption">
-              
-            </div>
-          </div>
         </div>
       </div>
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -93,17 +83,17 @@ $('.carousel').carousel();
         <span class="sr-only">Next</span>
       </a>
     </div><!-- /.carousel -->
+</div><!-- col-md-6 -->
 
-</div>
-        <div class="col-md-6">
+        <div class="col-md-4">
             <div class="jumbotron">
-              <h1 style="font-size: 35px"><font color="white">Aktuellt</font></h1>
-              <h1 style="font-size: 15px"><font color="white">Öppet Dygnet Runt!</font></h1>
+              <h1 style="font-size: 35px"><font color="white">Aktuellt!</font></h1>
+              <h1 style="font-size: 15px"><font color="white"><u>Öppet Dygnet Runt!</u></font></h1>
               <p style="font-size: 15px"><font color="white">Nu har vi öppet dygnet runt för alla med guldkort!
 Bli guldkortsmedlem för 300:- och få tillgång till gymmet dygnet runt alla dagar! 
-Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p><br>
+Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p>
 
-              <h1 style="font-size: 15px"><font color="white">Nu finns Granbacka på Facebook!</font></h1>
+              <h1 style="font-size: 15px"><font color="white"><u>Nu finns Granbacka på Facebook!</u></font></h1>
               <p style="font-size: 15px"><font color="white">På vår sida kan du bland annat läsa om vilka pass som erbjuds varje dag, om våra instruktörer, samt erbjudanden vi har.</font></p>
             </div>
         </div><!-- end of col-md-6 -->
