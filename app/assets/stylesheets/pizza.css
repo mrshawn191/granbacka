@@ -37,9 +37,20 @@ b, i {
 .cd-intro {
   margin: 0.5em auto;
 }
-@media only screen and (min-width: 768px) {
+
+@media only screen and (max-width: 600px) {
+  span, b, i {
+    font-size: 18px;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
   .cd-intro {
-    margin: 0.5em auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    height: 30px;
+    padding-bottom: 50px;
   }
 }
 @media only screen and (min-width: 1170px) {
