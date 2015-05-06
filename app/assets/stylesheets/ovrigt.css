@@ -2,9 +2,7 @@
 
 /* Supporting marketing content */
 .marketing {
-  margin: 40px 0;
-  padding-right: 15px;
-  padding-left: 15px;
+  margin: 40px;
 }
 
 .marketing p + h4 {
@@ -16,6 +14,7 @@
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  max-width: 730px;
 }
 
 .containerkorv .jumbotronkorv{
@@ -28,10 +27,7 @@
 /* Custom page footer */
 
 /* Customize container */
-@media (min-width: 768px) {
-  .containerkorv {
-    max-width: 730px;
-  }
+
 
 .containerkorv-narrow > hr {
   margin: 10px 0;
