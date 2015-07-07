@@ -60,6 +60,15 @@
 
 </script>
 
+<style>
+  body {
+
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+
+</style>
 </head>
 <body>
 
@@ -107,7 +116,11 @@
 <div class="row">
 <div class="col-md-1"></div><div class="col-md-1"></div>
 <div class="col-md-1">
+        <% if logged_in? %>
+
 <%= link_to 'Ny Aktivitet', new_event_path, class: "btn btn-primary" %>
+<% end %>
+
 </div>
 </div>
 </div><br>
@@ -124,3 +137,4 @@
 </div></div><br><br>
 </body>
 </html>
+

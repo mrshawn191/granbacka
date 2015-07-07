@@ -13,10 +13,19 @@
     
     <script src='assets/jquery.min.js'></script>
     <script src="assets/main.js"></script>
-    <script src="assets/modernizr.js"></script> 
     <script src='assets/bootstrap.min.js'></script>
 
+<style>
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+
+</style>
+
   </head>
+
 
   <body>
 
@@ -90,6 +99,9 @@
               <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
               <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
               <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
+              <% if logged_in? %>
+              <li><%= link_to "Logga ut", logout_path, method: "delete" %></li>
+              <% end %>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->

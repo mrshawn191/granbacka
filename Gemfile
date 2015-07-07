@@ -14,7 +14,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 #gem 'omniauth-facebook'
-
+gem 'bcrypt'
 
 #gem 'fullcalendar-rails'
 gem 'momentjs-rails'

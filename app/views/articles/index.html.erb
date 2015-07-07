@@ -5,9 +5,13 @@
         
 
         <div class="row">
+
+        <%= if logged_in? %>
         <div class="col-md-4"><p><%= link_to new_article_path, :class => "btn btn-danger btn-lg" do %>
           <span class="glyphicon glyphicon-plus" aria-hidden="true"> Aktivitet</span>
           <% end %> </p></div><div class="col-md-4"></div><!-- end of col-md4 -->
+          <% else %>
+
 
          <div class="col-md-4"> <%= link_to "Vecka", new_article_path, :class => "btn btn-primary " %>
           <%= link_to "Månad", new_article_path, :class => "btn btn-primary " %>
@@ -33,6 +37,6 @@
                     <% end %>
                   </div>
 
-
+<% end %>
   </div>
   </div>

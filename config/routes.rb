@@ -1,18 +1,20 @@
 Rails.application.routes.draw do
-  resources :events
-
-  get 'startsida/index'
 
 
-  root 'startsida#index'
 
-  resources :sessions,      only: [:new, :create, :destroy]
+ post   'login'   => 'sessions#create'
+ get 'logout'  => 'sessions#destroy'
 
-  resources :articles
+get "sessions/destroy"
 
+root 'startsida#index'
+
+get 'startsida/register'
+  match '/register', to: 'users#new', via: 'get'
 
 get 'startsida/login'
-	  match '/login', to: 'startsida#login', via: 'get'
+	match '/login', to: 'sessions#new', via: 'get'
+
 
 
 get 'startsida/pricing'
@@ -47,6 +49,13 @@ get 'startsida/pass'
 
 get 'startsida/gym'
   match '/gym', to: 'startsida#gym', via: 'get'
+
+
+  resources :events
+
+  resources :users
+
+  resources :articles
 
 
 end
