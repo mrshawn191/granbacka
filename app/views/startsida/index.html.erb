@@ -6,30 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-
-    <title>Carousel Template for Bootstrap</title>
-
-    <!-- Bootstrap core CSS -->
+    <!-- CSS -->
     <link href="assets/pizza.css" rel="stylesheet">
-
-    <script src='assets/jquery.min.js'></script>
-
-        <script src='assets/pizza.js'></script>
-
-
-
     <link href="assets/startsida.css" rel="stylesheet">
-        <link href="assets/ovrigt.css" rel="stylesheet">
+    <link href="assets/ovrigt.css" rel="stylesheet">
+    <link href="assets/googlemaps.css" rel="stylesheet">
 
+    <!-- Javascript -->
+    <script src='assets/jquery.min.js'></script>
+    <script src='assets/pizza.js'></script>
     <script src='assets/bootstrap.min.js'></script>
-
-        <link href="assets/googlemaps.css" rel="stylesheet">
-    <!-- <link href="assets/carousel.css" rel="stylesheet"> -->
-
 
 <script type="text/javascript">
 $('.carousel').carousel();
     </script>
+
+<style>
+
+@media only screen and (min-width: 1000px){
+  span, b{
+
+  }
+}
+
+</style>
 
   </head>
 <!-- NAVBAR
@@ -41,11 +41,10 @@ $('.carousel').carousel();
         <h1 class="cd-headline letters scale">
             <span>Det bästa med Granbacka Gym är</span>
             <span class="cd-words-wrapper">
-                <b class="is-visible">personalen</b>
-                <b>utrustningen</b>
-                <b>träningen</b>
-                <b>lokalen</b>
-                <b>folket</b>
+                <b class="is-visible">de&nbsp;generösa&nbsp;öppettiderna</b>
+                <b>den&nbsp;familjär&nbsp;stämning</b>
+                <b>den&nbsp;kompetenta&nbsp;och&nbsp;engagerande&nbsp;personalen</b>
+                <b>valmöjligheten&nbsp;av&nbsp;medlemskap</b>
             </span>
         </h1>
     </section> </address></section>
@@ -397,7 +396,7 @@ Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p>
           <%= image_tag("feat4.png", :class =>  "featurette-image img-responsive center-block") %>
         </div>
       </div>
-      </div>
+      </div> <!-- end of container -->
 
 
 <br><br>
@@ -436,59 +435,24 @@ Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p>
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Ägare</h2>
           <p><a class="btn btn-info btn-sm" href="#" role="button">Kontakta &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-3 -->
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Boxning Instruktör</h2>
           <p><a class="btn btn-info btn-sm" href="#" role="button">Kontakta &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-3 -->
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Salsa Instruktör</h2>
           <p><a class="btn btn-info btn-sm" href="#" role="button">Kontakta &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-3 -->
         <div class="col-md-3">
           <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
           <h2>Massör</h2>
           <p><a class="btn btn-info btn-sm" href="#" role="button">Kontakta &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
+        </div><!-- /.col-md-3 -->
       </div><!-- /.row -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      <!-- /END THE FEATURETTES -->
-</div>
+</div> <!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript

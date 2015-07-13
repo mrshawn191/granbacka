@@ -38,6 +38,8 @@ b, i {
   margin: 0.5em auto;
 }
 
+
+
 @media only screen and (max-width: 600px) {
   span, b, i {
     font-size: 18px;
