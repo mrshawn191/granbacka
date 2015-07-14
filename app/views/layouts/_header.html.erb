@@ -1,45 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <link href='assets/style.css' rel='stylesheet' />
-
-    <link href='assets/bootstrap.css' rel='stylesheet' />
-    <link href='assets/bootstrap-theme.min.css' rel='stylesheet' />
-    
-    <script src='assets/jquery.min.js'></script>
-    <script src="assets/main.js"></script>
-    <script src='assets/bootstrap.min.js'></script>
+  <link href='assets/style.css' rel='stylesheet' />
+  <link href='assets/bootstrap.css' rel='stylesheet' />
+  <link href='assets/bootstrap-theme.min.css' rel='stylesheet' />
+  <script src='assets/jquery.min.js'></script>
+  <script src="assets/main.js"></script>
+  <script src='assets/bootstrap.min.js'></script>
 
 <style>
 
-body {
-  font-family: "Source Sans Pro", sans-serif;
+
+.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+.navbar .nav > li.current-menu-item > a, 
+.navbar .nav > li.current-menu-ancestor > a {
+
+font-family: "Source Sans Pro", sans-serif;
+
 }
 
+.nav .navbar-nav li, span, a{
+  font-family: "Source Sans Pro", sans-serif;
+  
+}
+ 
+.navbar a {
+}
 
 </style>
+</head>
 
-  </head>
-
-
-  <body>
-
-
-
-
-
-
-
-
-
-
-
-
+<body>
 <div class="cd-panel from-right">
   <header class="cd-panel-header">
     <h1>Öppettider &amp; Kontakta oss</h1><br><br>
@@ -75,62 +71,56 @@ body {
 
 </div>
 
-    <center><a href="<%= root_path %>"><img src ="../assets/granbacka.gif"></a></center> <br><br>
-    <div class="container">
+<center><a href="<%= root_path %>"><img src ="../assets/granbacka.gif"></a></center> <br><br>
 
-      <!-- Static navbar -->
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Schema</span></a></li>
-              <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
-              <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Pass</span></a></li>
-              <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
-              <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
-              <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
-              <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
-              <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
-              <% if logged_in? %>
-              <li><%= link_to "Logga ut", logout_path, method: "delete" %></li>
-              <% end %>
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-     
-
-    </div> <!-- /container -->
+<div class="container">
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Schema</span></a></li>
+          <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
+          <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Pass</span></a></li>
+          <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
+          <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
+          <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
+          <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
+          <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
+          <% if logged_in? %>
+            <li><%= link_to "Logga ut", logout_path, method: "delete" %></li>
+          <% end %>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
+</div> <!-- /container -->
 
 
 <ul id="navigation">
-
-      <div class="facebook">
-            <li class="home"><a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" title="Home"></a></li></div>
-
-            <div class="facebook">
-            <li class="about"><a href="" title="About"></a></li></div>
-
-            <div class="facebook">
-            <li class="search"><a href="" title="Search"></a></li></div>
-
-<div class="facebook">
-            <li class="photos"><a href="" title="Photos"></a></li></div>
-
-            <div class="facebook">
-            <li class="rssfeed"><a href="" title="Rss Feed"></a></li></div>
-
+  <div class="facebook">
+    <li class="home"><a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" title="Home"></a></li>
+  </div>
+  <div class="facebook">
+    <li class="about"><a href="" title="About"></a></li>
+  </div>
+  <div class="facebook">
+    <li class="search"><a href="" title="Search"></a></li>
+  </div>
+  <div class="facebook">
+    <li class="photos"><a href="" title="Photos"></a></li>
+  </div>
+  <div class="facebook">
+    <li class="rssfeed"><a href="" title="Rss Feed"></a></li>
+  </div>
 </ul>
 
-
-  </body>
+</body>
 </html>

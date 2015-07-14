@@ -1,4 +1,14 @@
 
+<style>
+  body {
+
+  padding-top: 40px;
+  padding-bottom: 100px;
+}
+
+
+</style>
+
 <% if logged_in? %>
 
 <center><h1>Du är redan inloggad</h1></center>
@@ -15,7 +25,7 @@
       <%= f.email_field :email, class: 'form-control' %>
 
       <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control' %>
+      <%= f.password_field :password, class: 'form-control' %><br>
 
       <%= f.submit "Log in", class: "btn btn-primary" %>
     <% end %>

@@ -1,10 +1,12 @@
 
 
 #pizza address {
+  font-size: 28px;
   position: relative;
   width: 100%;
   bottom: 0;
   left: 0;
+  /* ändra blåa paddingen på rullande bandet */
   padding: 1px;
   background-color: #669ae3;
   color: white;
@@ -19,6 +21,13 @@ a {
   text-decoration: none;
 }
 
+
+/* Ändra fonten på den rullande texten här bör ligga på 28px*/
+@media only screen and (min-width: 1000px){
+  span, b{
+
+  }
+}
 
 b, i {
   margin: 0;
@@ -62,6 +71,12 @@ b, i {
 }
 
 
+/* Ändra text här #1 */
+@media only screen and (min-width: 1170px) {
+  .cd-intro span{
+    font-size: 28px;
+  }
+}
 
 .cd-words-wrapper {
 
@@ -69,7 +84,10 @@ b, i {
   position: relative;
   text-align: left;
 }
+
+/* Ändra texten här #2*/
 .cd-words-wrapper b {
+  font-size: 28px;
   font-weight:normal;
   display: inline-block;
   position: absolute;
