@@ -1,7 +1,6 @@
 
 
 #pizza address {
-  font-size: 28px;
   position: relative;
   width: 100%;
   bottom: 0;
@@ -21,13 +20,6 @@ a {
   text-decoration: none;
 }
 
-
-/* Ändra fonten på den rullande texten här bör ligga på 28px*/
-@media only screen and (min-width: 1000px){
-  span, b{
-
-  }
-}
 
 b, i {
   margin: 0;
@@ -49,21 +41,28 @@ b, i {
 
 
 
-@media only screen and (max-width: 600px) {
-  span, b, i {
-    font-size: 18px;
+/*  ####################### Mobile SIZE ############################### */
+
+@media only screen and (max-width: 768px) {
+  .cd-headline {
+    font-size: 17px;
   }
 }
 
-
-@media only screen and (max-width: 600px) {
-  .cd-intro {
-    margin-top: 0px;
-    padding-top: 0px;
-    height: 30px;
-    padding-bottom: 50px;
+@media only screen and (max-width: 768px) {
+  .cd-title {
+    line-height: 200px;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .cd-intro span b {
+    font-size: 17px;
+    margin: 0.3em auto;
+  }
+}
+
+/* ####################### Desktop SIZE ###############################*/
 @media only screen and (min-width: 1170px) {
   .cd-intro {
     margin: 0.5em auto;
@@ -79,7 +78,6 @@ b, i {
 }
 
 .cd-words-wrapper {
-
   display: inline-block;
   position: relative;
   text-align: left;

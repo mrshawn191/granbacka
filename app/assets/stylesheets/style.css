@@ -19,6 +19,12 @@ Primary style
 }
 
 
+/* Ta bort all facebook vid MOBILER */
+@media screen and (max-width: 768px) {
+  .facebook {
+    display: none;
+  }
+}
 
 
 ul#navigation {
