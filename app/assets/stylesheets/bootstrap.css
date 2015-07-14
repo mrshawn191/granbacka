@@ -270,11 +270,13 @@ th {
   src: url('glyphicons-halflings-regular.eot');
   src: url('glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('glyphicons-halflings-regular.woff2') format('woff2'), url('glyphicons-halflings-regular.woff') format('woff'), url('glyphicons-halflings-regular.ttf') format('truetype'), url('glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
+
+/* Ändra fonten här till navbar */
 .glyphicon {
   position: relative;
   top: 1px;
   display: inline-block;
-  font-family: 'Glyphicons Halflings';
+  font-family: 'Glyphicons Halflings', "Source Sans Pro", sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1;
