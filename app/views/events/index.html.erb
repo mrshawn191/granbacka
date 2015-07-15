@@ -111,6 +111,8 @@
 </div>
 
 
+
+
 <br>
 <div class="container-aktivitet">
 <div class="row">
@@ -119,6 +121,8 @@
         <% if logged_in? %>
 
 <%= link_to 'Ny Aktivitet', new_event_path, class: "btn btn-primary" %>
+<%= link_to 'Alla Aktiviteter', alla_path, class: "btn btn-primary" %>
+
 <% end %>
 
 </div>

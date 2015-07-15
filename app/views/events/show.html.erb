@@ -23,6 +23,8 @@
 </head>
 <body>
 
+<center><h1>Dagens pass</h1></center><br><br>
+
 <div class="container">
 <div class="row"><div class="col-md-4"></div>
 <div class="col-md-4">
@@ -48,7 +50,9 @@
   <%= @event.end_time %>
 </p>
 
+<% if logged_in? %>
 <%= link_to 'Ändra', edit_event_path(@event) %> |
+<% end %>
 <%= link_to 'Tillbaka', events_path %>
 </div>
 </div>

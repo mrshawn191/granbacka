@@ -2,8 +2,16 @@ Rails.application.routes.draw do
 
 
 
+  resources :events
+
+  resources :users
+
+  resources :articles
+
+
  post   'login'   => 'sessions#create'
- get 'logout'  => 'sessions#destroy'
+ #ändra till get 'logout' om du tar bort javascript från application.html.erb
+ delete 'logout'  => 'sessions#destroy'
 
 get "sessions/destroy"
 
@@ -15,6 +23,7 @@ get 'startsida/register'
 get 'startsida/login'
 	match '/login', to: 'sessions#new', via: 'get'
 
+  match '/alla', to: 'events#alla', via: 'get'
 
 
 get 'startsida/pricing'
@@ -50,12 +59,6 @@ get 'startsida/pass'
 get 'startsida/gym'
   match '/gym', to: 'startsida#gym', via: 'get'
 
-
-  resources :events
-
-  resources :users
-
-  resources :articles
 
 
 end
