@@ -18,7 +18,11 @@ get "sessions/destroy"
 root 'startsida#index'
 
 get 'startsida/register'
-  match '/register', to: 'users#new', via: 'get'
+match '/register', to: 'users#new', via: 'get'
+
+match '/sommar', to: 'startsida#sommar', via: 'get'
+match '/upptrappning', to: 'startsida#upptrappning', via: 'get'
+
 
 get 'startsida/login'
 	match '/login', to: 'sessions#new', via: 'get'
