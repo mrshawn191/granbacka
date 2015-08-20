@@ -29,10 +29,6 @@
         }
 
 
-        a {
-            color: white;
-        }
-
 
     </style>
 
@@ -74,15 +70,15 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                       <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
-                       <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
-                       <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
+                     <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
+                     <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
+                     <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
                     <%=image_tag("bild4.jpg", :alt => "Slide0") %>  
                 </div>
                 <div class="item">
@@ -107,13 +103,13 @@
           <font color="white" style="font-size: 12px" >(Gäller mellan 17 Augusti - 6 September)</font>
           <p style="font-size: 12px"><font color="white">Mån 11:30 - 20:00 &amp Tis 11:30 - 19:00<br>Ons 11:30 - 19:30 &amp Tors 11:00 - 19:00<br>Fre STÄNGT &amp Lör 09:30 - 13:00<br>Sön 14:00 - 18:00</font></p>
 
-          <a href="/upptrappning" style="font-size: 12px"><u>Här hittar du vårt upptrappningsschema!</u></a>
+          <a href="/upptrappning" style="font-size: 12px"><font color="white"><u>Här hittar du vårt upptrappningsschema!</u></font></a>
           <h1 style="font-size: 12px"><font color="white"><u>Öppet Dygnet Runt!</u></font></h1>
           <p style="font-size: 12px"><font color="white">Nu har vi öppet dygnet runt för alla med guldkort!
             Bli guldkortsmedlem för 300:- och få tillgång till gymmet dygnet runt alla dagar! 
             Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p>
 
-            <a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" style="font-size: 12px"><u>Nu finns Granbacka på Facebook!</u></a>
+            <a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" style="font-size: 12px"><font color="white"><u>Nu finns Granbacka på Facebook!</u></font></a>
             <p style="font-size: 12px"><font color="white">På vår sida kan du bland annat läsa om vilka pass som erbjuds varje dag, om våra instruktörer, samt erbjudanden vi har.</font></p>
 
 
@@ -286,7 +282,7 @@
                         Personlig träning <strong>Kontakta oss</strong>
                     </li>
                     <li class="list-group-item">
-                        Kiropraktik <strong>500 kr</strong>
+                        Kiropraktik <strong>550 kr</strong>
                     </li>
                     <li class="list-group-item">
                         Massage 30min/45min/55min <strong>400 kr/500 kr/600 kr</strong>
@@ -305,24 +301,22 @@
                     <li class="list-group-item">
 
 
-                     <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
+                       <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
 
-                     <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
+                       <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
 
-                     <p>Dagkort gäller ej för gruppträning. Åldersgräns för styrketräning är 16 år.</p>
+                       <p>Åldersgräns för styrketräning är 16 år.(Undantag kan göras med godkännande av målsman)</p>
 
-                     <li class="list-group-item">
+                       <li class="list-group-item">
+                        <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
+                        <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
 
-                         <a href="http://granbacka.com/pdf/Medlemsavtal%20blankett%20Granbacka%202009.pdf">Medlemsavtal för utskrift</a><br>
-
-                         <a href="http://granbacka.com/pdf/Membership%20agreement%20Granbacka.pdf">Membership agreement printer friendly verison</a>
-
-                     </li>
-                 </ul>
-             </div>
-         </div>
-     </div><!-- end of row -->
- </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- end of row -->
+</div>
 
 
 
@@ -350,11 +344,11 @@
 
 
 
- <!-- START THE FEATURETTES -->
- <hr class="featurette-divider">
- <br><br><h1><center> Om Granbacka </center></h1><br><br><br>
+<!-- START THE FEATURETTES -->
+<hr class="featurette-divider">
+<br><br><h1><center> Om Granbacka </center></h1><br><br><br>
 
- <div class="container">
+<div class="container">
   <div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Vår historia. <span class="text-muted">Funnits sedan 1970.</span></h2>

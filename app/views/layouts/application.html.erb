@@ -44,9 +44,8 @@
 
       <p><strong>Telefax: </strong></p>
       <p>08-82 10 06</p>
-
       <p><strong>E-post: </strong></p>
-      <p>info@granbacka.com</p>
+      <%= mail_to "info@granbacka.com" do %> info@granbacka.com <% end %> 
     </div>
   </div>
 
