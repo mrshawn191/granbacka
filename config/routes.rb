@@ -22,6 +22,7 @@ match '/register', to: 'users#new', via: 'get'
 
 match '/sommar', to: 'startsida#sommar', via: 'get'
 match '/upptrappning', to: 'startsida#upptrappning', via: 'get'
+match '/host', to: 'startsida#host', via: 'get'
 
 
 get 'startsida/login'
