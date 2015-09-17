@@ -32,7 +32,7 @@
 
 /* JumboTRON för startsidan */
 .jumbotron {
-  height: 500px;
+  height: 550px;
   width: 350px;
   color: inherit;
   background-color: #3d6db2;
@@ -213,7 +213,7 @@ body {
 
 /* Carousel base class */
 .carousel {
-  height: 500px;
+  height: 550px;
   margin-bottom: 60px;
 }
 /* Since positioning the image, we need to help out the caption */
