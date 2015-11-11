@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<div class="container">
+<div class="row"><div class="col-md-4">
+</div>
+<div class="col-md-4">
+<h1>Visa Alla Meddelande</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Message</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @contents.each do |content| %>
+      <tr>
+        <td><%= content.message %></td>
+        <td><%= link_to 'Visa', content %></td>
+        <td><%= link_to 'Redigera', edit_content_path(content) %></td>
+        <td><%= button_to 'Radera', content, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Content', new_content_path %>
+</div>
+</div>
+</div>

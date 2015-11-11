@@ -38,6 +38,13 @@
   background-color: #3d6db2;
 }
 
+.jumbotron2 {
+  height: 750px;
+  width: 850px;
+  color: inherit;
+  background-color: #3d6db2;
+}
+
 @media only screen and (max-width: 600px) {
   .jumbotron {
     height: 420px;

@@ -68,15 +68,15 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                       <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
-                       <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
-                       <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
-                   </div>
-                   <div class="item">
+                     <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
+                     <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
+                     <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
+                 </div>
+                 <div class="item">
                     <%=image_tag("bild4.jpg", :alt => "Slide0") %>  
                 </div>
                 <div class="item">
@@ -99,7 +99,41 @@
 
     <div class="col-md-4">
         <div class="jumbotron">
-          <h1 style="font-size: 25px"><font color="white">Aktuellt!</font></h1>
+
+            <h1 style="font-size: 25px"><font color="white">Aktuellt!</font></h1>
+
+            <% @contents.each do |content| %>
+
+
+            <h1 style="font-size: 11px"><font color="white"><%= simple_format(content.message, {}, wrapper_tag: "div")  %></font></h1>
+
+            <% end %>
+
+
+
+            <h1 style="font-size: 11px"><font color="white"><u>Receptionens Öppettider under hösten</u></font></h1>
+            <font color="white" style="font-size: 11px" >(Gäller mellan 7 Sep - 31 Dec)</font>
+            <p style="font-size: 11px"><font color="white">Mån 09:30 - 20:00 &amp; Tis 09:30 - 19:00<br>Ons 08:30 - 20:30 &amp; Tors 09:30 - 20:00<br>Fre 09:30 - 13:00 &amp; Lör 09:30 - 13:00<br>Sön 14:00 - 18:00</font></p>
+
+            <h1 style="font-size: 11px"><font color="white"><u>Öppet Dygnet Runt!</u></font></h1>
+            <p style="font-size: 11px"><font color="white">Nu har vi öppet dygnet runt för alla med guldkort!
+                Bli guldkortsmedlem för 300:- och få tillgång till gymmet dygnet runt alla dagar! 
+                Obs: Guldkortsmedlemskapet är en engångskostnad!</font></p>
+
+                <a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" style="font-size: 11px"><font color="white"><u>Nu finns Granbacka på Facebook!</u></font></a>
+                <p style="font-size: 11px"><font color="white">På vår sida kan du bland annat läsa om vilka pass som erbjuds varje dag, om våra instruktörer, samt erbjudanden vi har.</font></p>
+
+
+            </div>
+        </div><!-- end of col-md-6 -->
+
+        <!-- <div class="jumbotron2"></div> -->
+    </div> <!-- end of row -->
+</div> <!-- end of container -->
+
+<!-- 
+
+<h1 style="font-size: 25px"><font color="white">Aktuellt!</font></h1>
           <h1 style="font-size: 15px"><font color="white"><u>Senaste schema ändring!</u></font></h1>
 
 
@@ -119,95 +153,203 @@
             <a href="https://www.facebook.com/pages/Granbacka-Gym-Motion/204914559560410" style="font-size: 11px"><font color="white"><u>Nu finns Granbacka på Facebook!</u></font></a>
             <p style="font-size: 11px"><font color="white">På vår sida kan du bland annat läsa om vilka pass som erbjuds varje dag, om våra instruktörer, samt erbjudanden vi har.</font></p>
 
+        -->
 
 
+
+
+
+
+        <hr class="featurette-divider">
+        <br><br><h1><center> Våra Priser </center></h1><br><br><br>
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gruppträning &amp; Gym</h3>
+                            <p class="text-center">Standard<br><br></p>
+                        </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>389 kr/mån</strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Årskort <strong>4 695 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Halvårskort <strong>3 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kvartalskort <strong>2 295 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Klippkort 10 X (giltigt 1 år) <strong>1 250 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Engångskostnad <strong>150 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+
+
+
+
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <div class="col-md-3">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gruppträning &amp; Gym</h3>
+                            <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
+                        </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>289 kr/mån</strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Årskort <strong>3 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Halvårskort <strong>2 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kvartalskort <strong>1 795 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Klippkort 10 X (giltigt 1 år) <strong>950 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Engångskostnad <strong>110 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+                <div class="col-md-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gymkort</h3>
+                            <p class="text-center">Standard<br><br></p>
+                        </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>229 kr/mån</strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Årskort <strong>2 895 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Halvårskort <strong>1 995 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kvartalskort <strong>1 495 kr</strong>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gymkort</h3>
+                            <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
+                        </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>199 kr/mån</strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Årskort <strong>2 595 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Halvårskort <strong>1 795 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kvartalskort <strong>1 295 kr</strong>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end of row -->
         </div>
-    </div><!-- end of col-md-6 -->
-</div> <!-- end of row -->
-</div> <!-- end of container -->
 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Övriga Priser<br></h3>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Solning Drop-in 3 min <strong>10 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Styrkeinstruktion 45 min <strong>300 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Personlig träning <strong>Kontakta oss</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kiropraktik <strong>550 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Massage 30min/45min/55min <strong>400 kr/500 kr/600 kr</strong>
+                            </li>
 
-
-
-
-
-
-
-<hr class="featurette-divider">
-<br><br><h1><center> Våra Priser </center></h1><br><br><br>
-
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="text-center">Gruppträning &amp; Gym</h3>
-                    <p class="text-center">Standard<br><br></p>
+                        </ul>
+                    </div>
                 </div>
-                <div class="panel-body text-center">(Autogiro)
-                    <p class="lead" style="font-size:30px"><strong>389 kr/mån</strong></p>
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Information</h3>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+
+                            <li class="list-group-item">
+
+
+                               <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
+
+                               <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
+
+                               <p>Åldersgräns för styrketräning är 16 år.(Undantag kan göras med godkännande av målsman)</p>
+
+                               <li class="list-group-item">
+                                <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
+                                <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
+
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">
-                        Årskort <strong>4 695 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Halvårskort <strong>3 495 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Kvartalskort <strong>2 295 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Klippkort 10 X (giltigt 1 år) <strong>1 250 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Engångskostnad <strong>150 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-
-
-
-
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-
-
-
-        <div class="col-md-3">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
-                    <h3 class="text-center">Gruppträning &amp; Gym</h3>
-                    <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
-                </div>
-                <div class="panel-body text-center">(Autogiro)
-                    <p class="lead" style="font-size:30px"><strong>289 kr/mån</strong></p>
-                </div>
-                <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">
-                        Årskort <strong>3 495 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Halvårskort <strong>2 495 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Kvartalskort <strong>1 795 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Klippkort 10 X (giltigt 1 år) <strong>950 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Engångskostnad <strong>110 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                    </li>
-                </ul>
-            </div>
+            </div><!-- end of row -->
         </div>
 
 
@@ -216,114 +358,6 @@
 
 
 
-        <div class="col-md-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="text-center">Gymkort</h3>
-                    <p class="text-center">Standard<br><br></p>
-                </div>
-                <div class="panel-body text-center">(Autogiro)
-                    <p class="lead" style="font-size:30px"><strong>229 kr/mån</strong></p>
-                </div>
-                <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">
-                        Årskort <strong>2 895 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Halvårskort <strong>1 995 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Kvartalskort <strong>1 495 kr</strong>
-                    </li>
-
-                    <li class="list-group-item">
-                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div class="panel panel-success">
-                <div class="panel-heading">
-                    <h3 class="text-center">Gymkort</h3>
-                    <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
-                </div>
-                <div class="panel-body text-center">(Autogiro)
-                    <p class="lead" style="font-size:30px"><strong>199 kr/mån</strong></p>
-                </div>
-                <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">
-                        Årskort <strong>2 595 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Halvårskort <strong>1 795 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Kvartalskort <strong>1 295 kr</strong>
-                    </li>
-
-                    <li class="list-group-item">
-                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div><!-- end of row -->
-</div>
-
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="text-center">Övriga Priser<br></h3>
-                </div>
-                <ul class="list-group list-group-flush text-center">
-                    <li class="list-group-item">
-                        Solning Drop-in 3 min <strong>10 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Styrkeinstruktion 45 min <strong>300 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Personlig träning <strong>Kontakta oss</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Kiropraktik <strong>550 kr</strong>
-                    </li>
-                    <li class="list-group-item">
-                        Massage 30min/45min/55min <strong>400 kr/500 kr/600 kr</strong>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="text-center">Information</h3>
-                </div>
-                <ul class="list-group list-group-flush text-center">
-
-                    <li class="list-group-item">
-
-
-                     <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
-
-                     <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
-
-                     <p>Åldersgräns för styrketräning är 16 år.(Undantag kan göras med godkännande av målsman)</p>
-
-                     <li class="list-group-item">
-                        <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
-                        <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
-
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div><!-- end of row -->
-</div>
 
 
 
@@ -344,43 +378,36 @@
 
 
 
+        <!-- START THE FEATURETTES -->
+        <hr class="featurette-divider">
+        <br><br><h1><center> Om Granbacka </center></h1><br><br><br>
 
+        <div class="container">
+          <div class="row featurette">
+            <div class="col-md-7">
+              <h2 class="featurette-heading">Vår historia. <span class="text-muted">Funnits sedan 1970.</span></h2>
+              <p class="lead">Granbacka Gym och Motion har funnits sedan 1970 och då drevs det av fritidsförvaltningen i Solna stad. År 2000 tog vi över driften av anläggningen och idag erbjuder vi ett brett träningsutbud med både pass och individuell träning som leds av våra duktiga instruktörer. Ni har också tillgång till både massage och kiropraktik.</p>
+          </div>
+          <div class="col-md-5">
+              <%= image_tag("feat1.jpg", :class =>  "featurette-image img-responsive center-block") %>
+          </div>
+      </div>
 
+      <hr class="featurette-divider">
 
+      <div class="row featurette">
+        <div class="col-md-7 col-md-push-5">
+          <h2 class="featurette-heading">Vi håller oss uppdaterade. </h2>
+          <p class="lead">Vi följer noggrant utvecklingen av olika träningsmetoder och trender för att hela tiden kunna erbjuda dig det senaste på träningsfronten. Våra öppettider till gymmet är generösa för att du ska hinna med att träna på de tider som passar dig.</p>
+      </div>
+      <div class="col-md-5 col-md-pull-7">
+          <%= image_tag("feat2.png", :class =>  "featurette-image img-responsive center-block") %>
+      </div>
+  </div>
 
+  <hr class="featurette-divider">
 
-
-
-<!-- START THE FEATURETTES -->
-<hr class="featurette-divider">
-<br><br><h1><center> Om Granbacka </center></h1><br><br><br>
-
-<div class="container">
   <div class="row featurette">
-    <div class="col-md-7">
-      <h2 class="featurette-heading">Vår historia. <span class="text-muted">Funnits sedan 1970.</span></h2>
-      <p class="lead">Granbacka Gym och Motion har funnits sedan 1970 och då drevs det av fritidsförvaltningen i Solna stad. År 2000 tog vi över driften av anläggningen och idag erbjuder vi ett brett träningsutbud med både pass och individuell träning som leds av våra duktiga instruktörer. Ni har också tillgång till både massage och kiropraktik.</p>
-  </div>
-  <div class="col-md-5">
-      <%= image_tag("feat1.jpg", :class =>  "featurette-image img-responsive center-block") %>
-  </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
-    <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">Vi håller oss uppdaterade. </h2>
-      <p class="lead">Vi följer noggrant utvecklingen av olika träningsmetoder och trender för att hela tiden kunna erbjuda dig det senaste på träningsfronten. Våra öppettider till gymmet är generösa för att du ska hinna med att träna på de tider som passar dig.</p>
-  </div>
-  <div class="col-md-5 col-md-pull-7">
-      <%= image_tag("feat2.png", :class =>  "featurette-image img-responsive center-block") %>
-  </div>
-</div>
-
-<hr class="featurette-divider">
-
-<div class="row featurette">
     <div class="col-md-7">
       <h2 class="featurette-heading">Våra mål och ambitioner.</h2>
       <p class="lead">Vår ambition med Granbacka är att det ska vara en social samlingspunkt med högt till tak och nära till skratt. Så vi anordnar även andra aktiviteter som till exempel träffar, fester och den årliga skidresan till Sälen.</p>

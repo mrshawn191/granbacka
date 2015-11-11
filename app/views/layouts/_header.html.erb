@@ -13,68 +13,70 @@
   <script src="assets/main.js"></script>
   <script src='assets/bootstrap.min.js'></script>
 
-<style>
+  <style>
 
 
-.navbar .nav > li > a, .navbar .nav > li > a:first-letter,
-.navbar .nav > li.current-menu-item > a, 
-.navbar .nav > li.current-menu-ancestor > a {
+    .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
+    .navbar .nav > li.current-menu-item > a, 
+    .navbar .nav > li.current-menu-ancestor > a {
 
-font-family: "Source Sans Pro", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
 
-}
+    }
 
-.nav .navbar-nav li, span, a{
-  font-family: "Source Sans Pro", sans-serif;
+    .nav .navbar-nav li, span, a{
+      font-family: "Source Sans Pro", sans-serif;
 
-}
- 
-.navbar a {
-}
+    }
 
-</style>
+    .navbar a {
+    }
+
+  </style>
 </head>
 
 <body>
 
-<!-- Tog bort kontakt från denna sida -->
-<% if logged_in? %>
-<center><a href="<%= root_path %>"><img src ="../../../../assets/granbacka.gif"></a></center> <br><br>
-<% else %>
+  <!-- Tog bort kontakt från denna sida -->
+  <% if logged_in? %>
+  <center><a href="<%= root_path %>"><img src ="../../../../assets/granbacka.gif"></a></center> <br><br>
+  <% else %>
 
-<center><a href="<%= root_path %>"><img src ="../assets/granbacka.gif"></a></center> <br><br>
+  <center><a href="<%= root_path %>"><img src ="../assets/granbacka.gif"></a></center> <br><br>
 
-<% end %>
-<div class="container">
-  <nav class="navbar navbar-default">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav">
-          <li><a href="<%= host_path %>"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Schema</span></a></li>
-          <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Kalender</span></a></li>
-          <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
-          <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Passbeskrivning</span></a></li>
-          <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
-          <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
-          <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
-          <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
-          <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
-          <% if logged_in? %>
+  <% end %>
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="<%= host_path %>"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Schema</span></a></li>
+            <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Kalender</span></a></li>
+            <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
+            <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Passbeskrivning</span></a></li>
+            <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
+            <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
+            <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
+            <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
+            <% if logged_in? %>
             <li><%= link_to "Logga ut", logout_path, method: "delete" %></li>
-          <% end %>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </nav>
-</div> <!-- /container -->
+            <li><%= link_to "Ändra Text", contents_path %></li>
+
+            <% end %>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+  </div> <!-- /container -->
 
 
 
