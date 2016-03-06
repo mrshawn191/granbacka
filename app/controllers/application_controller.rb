@@ -5,11 +5,11 @@ class ApplicationController < ActionController::Base
   include SessionsHelper
   before_filter :set_locale
 
-  
+
   private
 
   def set_locale
-    I18n.locale = params[:locale] || I18n.default_locale
+    I18n.locale = params[:locale] if params[:locale].present?
   end
 
 
