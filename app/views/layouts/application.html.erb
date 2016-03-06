@@ -7,55 +7,58 @@
   <%= javascript_include_tag 'application'%>
   <%= csrf_meta_tags %>
   <% end %>
+
+  <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+
 </head>
 
 <body>
-<%= render 'layouts/header'%>
+  <%= render 'layouts/header'%>
 
-<%= yield %> <!-- Här laddas ALLT -->
+  <%= yield %> <!-- Här laddas ALLT -->
 
-<%= render 'layouts/footer' %>
+  <%= render 'layouts/footer' %>
 
-<div class="cd-panel from-right">
-  <header class="cd-panel-header">
-    <h1>Öppettider &amp; Kontakta oss</h1><br><br>
-    <a href="#0" class="cd-panel-close">Close</a>
-  </header>
+  <div class="cd-panel from-right">
+    <header class="cd-panel-header">
+      <h1>Öppettider &amp; Kontakta oss</h1><br><br>
+      <a href="#0" class="cd-panel-close">Close</a>
+    </header>
 
-  <div class="cd-panel-container">
-    <div class="cd-panel-content">
-    <br>
-      <p><strong>Guldkortskunder</strong></p>
-      <p>Dygnet runt</p>
-      <p><strong>Måndag - Fredag</strong></p>
-      <p>06.30 - 21.30</p>
-      <p><strong>Lördag - Söndag</strong></p>
-      <p>09.30 - 19.00</p><br>
+    <div class="cd-panel-container">
+      <div class="cd-panel-content">
+        <br>
+        <p><strong>Guldkortskunder</strong></p>
+        <p>Dygnet runt</p>
+        <p><strong>Måndag - Fredag</strong></p>
+        <p>06.30 - 21.30</p>
+        <p><strong>Lördag - Söndag</strong></p>
+        <p>09.30 - 19.00</p><br>
 
-       <p><strong>Receptionens Öppettider:</strong></p>
-      <p>Mån 09:30 - 20:00 <br> Tis 09:30 - 13:00 &amp; 16:30 - 20:00<br>Ons 09:30 - 20:00 <br> Tors 09:30 - 13:00 &amp; 16:30 - 20:00<br>Fre 09:30 - 12:00 <br> Lör 09:30 - 13:00 &amp; Sön 14:00 - 18:00</p>
+        <p><strong>Receptionens Öppettider:</strong></p>
+        <p>Mån 09:30 - 20:00 <br> Tis 09:30 - 13:00 &amp; 16:30 - 20:00<br>Ons 09:30 - 20:00 <br> Tors 09:30 - 13:00 &amp; 16:30 - 20:00<br>Fre 09:30 - 12:00 <br> Lör 09:30 - 13:00 &amp; Sön 14:00 - 18:00</p>
 
-      <br>
-      <p><strong>Adress: </strong></p>
-      <p><u><a href="http://www.granbacka.com#anchor-name">Hitta oss här</a></u></p>
-      <p>Emmylundsvägen 4</p>
-      <p>171 72 Solna</p>
-      <p>T-Bana: Västra Skogen</p>
+        <br>
+        <p><strong>Adress: </strong></p>
+        <p><u><a href="http://www.granbacka.com#anchor-name">Hitta oss här</a></u></p>
+        <p>Emmylundsvägen 4</p>
+        <p>171 72 Solna</p>
+        <p>T-Bana: Västra Skogen</p>
 
-      <p><strong>Telefon: </strong></p>
-      <p>08-82 34 39</p>
+        <p><strong>Telefon: </strong></p>
+        <p>08-82 34 39</p>
 
-      <p><strong>Telefax: </strong></p>
-      <p>08-82 10 06</p>
-      <p><strong>E-post: </strong></p>
-      <%= mail_to "info@granbacka.com" do %> info@granbacka.com <% end %> <br>
+        <p><strong>Telefax: </strong></p>
+        <p>08-82 10 06</p>
+        <p><strong>E-post: </strong></p>
+        <%= mail_to "info@granbacka.com" do %> info@granbacka.com <% end %> <br>
 
-     
+        
+      </div>
     </div>
+
   </div>
 
-</div>
-
-<script src='assets/bootstrap.min.js'></script>
-  </body>
+  <script src='assets/bootstrap.min.js'></script>
+</body>
 </html>

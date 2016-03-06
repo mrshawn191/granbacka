@@ -68,15 +68,15 @@
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner" role="listbox">
                     <div class="item active">
-                     <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
-                 </div>
-                 <div class="item">
-                     <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
-                 </div>
-                 <div class="item">
-                     <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
-                 </div>
-                 <div class="item">
+                       <%=image_tag("carouselpic2.jpg", :alt => "Slide0") %>  
+                   </div>
+                   <div class="item">
+                       <%=image_tag("carouselpic1.jpg", :alt => "Slide0") %>  
+                   </div>
+                   <div class="item">
+                       <%=image_tag("bild3.jpg", :alt => "Slide0") %>  
+                   </div>
+                   <div class="item">
                     <%=image_tag("bild4.jpg", :alt => "Slide0") %>  
                 </div>
                 <div class="item">
@@ -165,7 +165,7 @@
 
 
         <hr class="featurette-divider">
-        <br><br><h1><center> Våra Priser </center></h1><br><br><br>
+        <br><br><h1><center> <%= t "pricing.title" %></center></h1><br><br><br>
 
 
         <div class="container">
@@ -173,30 +173,30 @@
                 <div class="col-md-3">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="text-center">Gruppträning &amp; Gym</h3>
+                            <h3 class="text-center"><%= t "pricing.grouptraining" %></h3>
                             <p class="text-center">Standard<br><br></p>
                         </div>
                         <div class="panel-body text-center">(Autogiro)
-                            <p class="lead" style="font-size:30px"><strong>389 kr/mån</strong></p>
+                            <p class="lead" style="font-size:30px"><strong>389 kr/<%= t "pricing.month" %></strong></p>
                         </div>
                         <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
-                                Årskort <strong>4 695 kr</strong>
+                                <%= t "pricing.yearprice" %> <strong>4 695 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Halvårskort <strong>3 495 kr</strong>
+                                <%= t "pricing.halfprice" %>  <strong>3 495 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Kvartalskort <strong>2 295 kr</strong>
+                                <%= t "pricing.quartprice" %>  <strong>2 295 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Klippkort 10 X (giltigt 1 år) <strong>1 250 kr</strong>
+                                <%= t "pricing.klippprice" %>  <strong>1 250 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Engångskostnad <strong>150 kr</strong>
+                                <%= t "pricing.onetimeprice" %>  <strong>150 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %>  <strong> 300 kr </strong>
 
 
 
@@ -212,30 +212,30 @@
                 <div class="col-md-3">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
-                            <h3 class="text-center">Gruppträning &amp; Gym</h3>
-                            <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
+                            <h3 class="text-center"><%= t "pricing.grouptraining" %></h3>
+                            <p class="text-center"><%= t "pricing.reduced" %></p>
                         </div>
                         <div class="panel-body text-center">(Autogiro)
-                            <p class="lead" style="font-size:30px"><strong>289 kr/mån</strong></p>
+                            <p class="lead" style="font-size:30px"><strong>289 kr/<%= t "pricing.month" %></strong></p>
                         </div>
                         <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
-                                Årskort <strong>3 495 kr</strong>
+                                 <%= t "pricing.yearprice" %>  <strong>3 495 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Halvårskort <strong>2 495 kr</strong>
+                                <%= t "pricing.halfprice" %> <strong>2 495 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Kvartalskort <strong>1 795 kr</strong>
+                                <%= t "pricing.quartprice" %> <strong>1 795 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Klippkort 10 X (giltigt 1 år) <strong>950 kr</strong>
+                                <%= t "pricing.klippprice" %> <strong>950 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Engångskostnad <strong>110 kr</strong>
+                                <%= t "pricing.onetimeprice" %> <strong>110 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
                             </li>
                         </ul>
                     </div>
@@ -254,21 +254,21 @@
                             <p class="text-center">Standard<br><br></p>
                         </div>
                         <div class="panel-body text-center">(Autogiro)
-                            <p class="lead" style="font-size:30px"><strong>229 kr/mån</strong></p>
+                            <p class="lead" style="font-size:30px"><strong>229 kr/<%= t "pricing.month" %></strong></p>
                         </div>
                         <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
-                                Årskort <strong>2 895 kr</strong>
+                                <%= t "pricing.yearprice" %> <strong>2 895 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Halvårskort <strong>1 995 kr</strong>
+                                <%= t "pricing.halfprice" %> <strong>1 995 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Kvartalskort <strong>1 495 kr</strong>
+                                <%= t "pricing.quartprice" %> <strong>1 495 kr</strong>
                             </li>
 
                             <li class="list-group-item">
-                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
                             </li>
                         </ul>
                     </div>
@@ -277,24 +277,24 @@
                     <div class="panel panel-success">
                         <div class="panel-heading">
                             <h3 class="text-center">Gymkort</h3>
-                            <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
+                            <p class="text-center"><%= t "pricing.reduced" %></p>
                         </div>
                         <div class="panel-body text-center">(Autogiro)
-                            <p class="lead" style="font-size:30px"><strong>199 kr/mån</strong></p>
+                            <p class="lead" style="font-size:30px"><strong>199 kr/<%= t "pricing.month" %></strong></p>
                         </div>
                         <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
-                                Årskort <strong>2 595 kr</strong>
+                                <%= t "pricing.yearprice" %> <strong>2 595 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Halvårskort <strong>1 795 kr</strong>
+                                <%= t "pricing.halfprice" %> <strong>1 795 kr</strong>
                             </li>
                             <li class="list-group-item">
-                                Kvartalskort <strong>1 295 kr</strong>
+                                <%= t "pricing.quartprice" %> <strong>1 295 kr</strong>
                             </li>
 
                             <li class="list-group-item">
-                                <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
                             </li>
                         </ul>
                     </div>
@@ -307,7 +307,7 @@
                 <div class="col-md-6">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <h3 class="text-center">Övriga Priser<br></h3>
+                            <h3 class="text-center"><%= t "pricing.others" %><br></h3>
                         </div>
                         <ul class="list-group list-group-flush text-center">
                             <li class="list-group-item">
@@ -338,14 +338,13 @@
 
                             <li class="list-group-item">
 
+                             <p><%= t "pricing.yearcard" %></p>
 
-                               <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
+                             <p><%= t "pricing.klippcard" %></p>
 
-                               <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
+                             <p><%= t "pricing.agelimit" %></p>
 
-                               <p>Åldersgräns för styrketräning är 16 år.(Undantag kan göras med godkännande av målsman)</p>
-
-                               <li class="list-group-item">
+                             <li class="list-group-item">
                                 <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
                                 <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
 
@@ -361,36 +360,15 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <!-- START THE FEATURETTES -->
         <hr class="featurette-divider">
-        <br><br><h1><center> Om Granbacka </center></h1><br><br><br>
+        <br><br><h1><center><%= t "startsida.header1" %></center></h1><br><br><br>
 
         <div class="container">
           <div class="row featurette">
             <div class="col-md-7">
-              <h2 class="featurette-heading">Vår historia. <span class="text-muted">Funnits sedan 1970.</span></h2>
-              <p class="lead">Granbacka Gym och Motion har funnits sedan 1970 och då drevs det av fritidsförvaltningen i Solna stad. År 2000 tog vi över driften av anläggningen och idag erbjuder vi ett brett träningsutbud med både pass och individuell träning som leds av våra duktiga instruktörer. Ni har också tillgång till både massage och kiropraktik.</p>
+              <h2 class="featurette-heading"><%= t "startsida.header2" %><span class="text-muted"><%= t "startsida.header3" %></span></h2>
+              <p class="lead"><%= t "startsida.body1" %></p>
           </div>
           <div class="col-md-5">
               <%= image_tag("feat1.jpg", :class =>  "featurette-image img-responsive center-block") %>
@@ -401,8 +379,8 @@
 
       <div class="row featurette">
         <div class="col-md-7 col-md-push-5">
-          <h2 class="featurette-heading">Vi håller oss uppdaterade. </h2>
-          <p class="lead">Vi följer noggrant utvecklingen av olika träningsmetoder och trender för att hela tiden kunna erbjuda dig det senaste på träningsfronten. Våra öppettider till gymmet är generösa för att du ska hinna med att träna på de tider som passar dig.</p>
+          <h2 class="featurette-heading"><%= t "startsida.header4" %></h2>
+          <p class="lead"><%= t "startsida.body2" %></p>
       </div>
       <div class="col-md-5 col-md-pull-7">
           <%= image_tag("feat2.png", :class =>  "featurette-image img-responsive center-block") %>
@@ -413,8 +391,8 @@
 
   <div class="row featurette">
     <div class="col-md-7">
-      <h2 class="featurette-heading">Våra mål och ambitioner.</h2>
-      <p class="lead">Vår ambition med Granbacka är att det ska vara en social samlingspunkt med högt till tak och nära till skratt. Så vi anordnar även andra aktiviteter som till exempel träffar, fester och den årliga skidresan till Sälen.</p>
+      <h2 class="featurette-heading"><%= t "startsida.header5" %></h2>
+      <p class="lead"><%= t "startsida.body3" %></p>
   </div>
   <div class="col-md-5">
 
@@ -427,8 +405,8 @@
 
 <div class="row featurette">
     <div class="col-md-7 col-md-push-5">
-      <h2 class="featurette-heading">Var vi håller till.</h2>
-      <p class="lead">Vi finns på Emmylundsvägen 4 i Huvudsta/Solna. Närmaste tunnelbanestation är Västra Skogen och därifrån är det 2-3 minuters promenad till oss. Vill du ha mer information eller undrar över något så är du alltid välkommen att ringa oss på telefon 08-82 34 39 eller e-posta till info@granbacka.com.</p>
+      <h2 class="featurette-heading"><%= t "startsida.header6" %></h2>
+      <p class="lead"><%= t "startsida.body4" %></p>
   </div>
   <div class="col-md-5 col-md-pull-7">
       <%= image_tag("feat4.png", :class =>  "featurette-image img-responsive center-block") %>

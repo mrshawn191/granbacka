@@ -1,96 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <link href='assets/startsida.css' rel='stylesheet' />
-        <link href='assets/ovrigt.css' rel='stylesheet' />
+    <link href='assets/ovrigt.css' rel='stylesheet' />
 
     <script src='assets/jquery.min.js'></script>
     <script src="assets/main.js"></script>
     <script src="assets/modernizr.js"></script> 
     <script src='assets/bootstrap.min.js'></script>
 
-  </head>
+</head>
+
+        <br><br><h1><center> <%= t "pricing.title" %></center></h1><br><br><br>
 
 
-<h1><center> Våra Priser </center></h1><br><br><br>
-
-
-<div class="container">
-        <div class="row">
+        <div class="container">
+            <div class="row">
                 <div class="col-md-3">
-                        <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Gruppträning &amp; Gym</h3>
-                                        <p class="text-center">Standard<br><br></p>
-                                </div>
-                                <div class="panel-body text-center">(Autogiro)
-                                        <p class="lead" style="font-size:30px"><strong>389 kr/mån</strong></p>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item">
-                                                Årskort <strong>4 695 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Halvårskort <strong>3 495 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Kvartalskort <strong>2 295 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Klippkort 10 X (giltigt 1 år) <strong>1 250 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Engångskostnad <strong>150 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-
-
-
-
-                                        </li>
-
-                                </ul>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="text-center"><%= t "pricing.grouptraining" %></h3>
+                            <p class="text-center">Standard<br><br></p>
                         </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>389 kr/<%= t "pricing.month" %></strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <%= t "pricing.yearprice" %> <strong>4 695 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.halfprice" %>  <strong>3 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.quartprice" %>  <strong>2 295 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.klippprice" %>  <strong>1 250 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.onetimeprice" %>  <strong>150 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %>  <strong> 300 kr </strong>
+
+
+
+
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
 
 
 
                 <div class="col-md-3">
-                        <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Gruppträning &amp; Gym</h3>
-                                        <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
-                                </div>
-                                <div class="panel-body text-center">(Autogiro)
-                                        <p class="lead" style="font-size:30px"><strong>289 kr/mån</strong></p>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item">
-                                                Årskort <strong>3 495 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Halvårskort <strong>2 495 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Kvartalskort <strong>1 795 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Klippkort 10 X (giltigt 1 år) <strong>950 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Engångskostnad <strong>110 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                                        </li>
-                                </ul>
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="text-center"><%= t "pricing.grouptraining" %></h3>
+                            <p class="text-center"><%= t "pricing.reduced" %></p>
                         </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>289 kr/<%= t "pricing.month" %></strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                 <%= t "pricing.yearprice" %>  <strong>3 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.halfprice" %> <strong>2 495 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.quartprice" %> <strong>1 795 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.klippprice" %> <strong>950 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.onetimeprice" %> <strong>110 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
 
 
@@ -100,112 +99,109 @@
 
 
                 <div class="col-md-3">
-                        <div class="panel panel-success">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Gymkort</h3>
-                                        <p class="text-center">Standard<br><br></p>
-                                </div>
-                                <div class="panel-body text-center">(Autogiro)
-                                        <p class="lead" style="font-size:30px"><strong>229 kr/mån</strong></p>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item">
-                                                Årskort <strong>2 895 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Halvårskort <strong>1 995 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Kvartalskort <strong>1 495 kr</strong>
-                                        </li>
-                                        
-                                        <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                                        </li>
-                                </ul>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gymkort</h3>
+                            <p class="text-center">Standard<br><br></p>
                         </div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>229 kr/<%= t "pricing.month" %></strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <%= t "pricing.yearprice" %> <strong>2 895 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.halfprice" %> <strong>1 995 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.quartprice" %> <strong>1 495 kr</strong>
+                            </li>
+
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-3">
-                        <div class="panel panel-success">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Gymkort</h3>
-                                        <p class="text-center">Studenter, pensionärer, arbetssökande och föräldralediga.</p>
-                                </div>
-                                <div class="panel-body text-center">(Autogiro)
-                                        <p class="lead" style="font-size:30px"><strong>199 kr/mån</strong></p>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                        <li class="list-group-item">
-                                                Årskort <strong>2 595 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Halvårskort <strong>1 795 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Kvartalskort <strong>1 295 kr</strong>
-                                        </li>
-                                        
-                                        <li class="list-group-item">
-                                        <span class="glyphicon glyphicon-star"></span> Guldkort <strong> 300 kr </strong>
-                                        </li>
-                                </ul>
+                    <div class="panel panel-success">
+                        <div class="panel-heading">
+                            <h3 class="text-center">Gymkort</h3>
+                            <p class="text-center"><%= t "pricing.reduced" %></p>
                         </div>
-                </div>
-        </div><!-- end of row -->
-</div>
+                        <div class="panel-body text-center">(Autogiro)
+                            <p class="lead" style="font-size:30px"><strong>199 kr/<%= t "pricing.month" %></strong></p>
+                        </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                <%= t "pricing.yearprice" %> <strong>2 595 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.halfprice" %> <strong>1 795 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                <%= t "pricing.quartprice" %> <strong>1 295 kr</strong>
+                            </li>
 
-<div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                        <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Övriga Priser<br></h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                <li class="list-group-item">
-                                                Solning Drop-in 3 min <strong>10 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Styrkeinstruktion 45 min <strong>300 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Personlig träning <strong>Kontakta oss</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Kiropraktik <strong>550 kr</strong>
-                                        </li>
-                                        <li class="list-group-item">
-                                                Massage 30min/45min/55min <strong>400 kr/500 kr/600 kr</strong>
-                                        </li>
-                                
-                                </ul>
+                            <li class="list-group-item">
+                                <span class="glyphicon glyphicon-star"></span> <%= t "pricing.goldencard" %> <strong> 300 kr </strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="panel panel-default">
+                        <div class="panel-heading">
+                            <h3 class="text-center"><%= t "pricing.others" %><br></h3>
                         </div>
+                        <ul class="list-group list-group-flush text-center">
+                            <li class="list-group-item">
+                                Solning Drop-in 3 min <strong>10 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Styrkeinstruktion 45 min <strong>300 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Personlig träning <strong>Kontakta oss</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Kiropraktik <strong>550 kr</strong>
+                            </li>
+                            <li class="list-group-item">
+                                Massage 30min/45min/55min <strong>400 kr/500 kr/600 kr</strong>
+                            </li>
+
+                        </ul>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="panel panel-default">
-                                <div class="panel-heading">
-                                        <h3 class="text-center">Information</h3>
-                                </div>
-                                <ul class="list-group list-group-flush text-center">
-                                
-                                <li class="list-group-item">
-                                        
-                                        
-                                         <p>Årskort kan frysas vid ett tillfälle i maximalt 30 dagar (gäller ej autogiro). Vid betalning via autogiro är bindningstiden 12 månader.</p>
-                                        
-                                         <p>Alla kort (utom klippkort) är personliga och får inte överlåtas eller säljas. Klippkort är giltiga 1 år från inköpsdagen oavsett antal klipp.</p>
-                                        
-                                         <p>Åldersgräns för styrketräning är 16 år. (Undantag kan göras med godkännande av målsman)</p>
-
-                                        <li class="list-group-item">
-
-                                         <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
-                                         <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
-
-                                                </li>
-                                </ul>
+                        <div class="panel-heading">
+                            <h3 class="text-center">Information</h3>
                         </div>
-                </div>
-        </div><!-- end of row -->
-</div>
+                        <ul class="list-group list-group-flush text-center">
 
+                            <li class="list-group-item">
+
+                             <p><%= t "pricing.yearcard" %></p>
+
+                             <p><%= t "pricing.klippcard" %></p>
+
+                             <p><%= t "pricing.agelimit" %></p>
+
+                             <li class="list-group-item">
+                                <%= link_to asset_path("medlemsavtal.pdf") do %> Medlemsavtal för utskrift <% end %><br>
+                                <%= link_to asset_path("eng_medlemsavtal.pdf") do %> Membership agreement printer friendly version <% end %>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div><!-- end of row -->
+        </div>

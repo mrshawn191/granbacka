@@ -14,8 +14,6 @@
   <script src='assets/bootstrap.min.js'></script>
 
   <style>
-
-
     .navbar .nav > li > a, .navbar .nav > li > a:first-letter,
     .navbar .nav > li.current-menu-item > a, 
     .navbar .nav > li.current-menu-ancestor > a {
@@ -34,7 +32,6 @@
 
   </style>
 </head>
-
 <body>
 
   <!-- Tog bort kontakt från denna sida -->
@@ -58,19 +55,20 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
-            <li><a href="<%= host_path %>"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> Schema</span></a></li>
-            <li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Kalender</span></a></li>
-            <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> Bokning</span></a></li>
-            <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> Passbeskrivning</span></a></li>
+            <li><a href="<%= host_path %>"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"> <%= t "navbar.schema" %></span></a></li>
+            <!--<li><a href="<%= events_path %>"><span class="glyphicon glyphicon-calendar" aria-hidden="true"> Kalender</span></a></li>-->
+            <li><a href="<%= bokning_path %>"><span class="glyphicon glyphicon-plus" aria-hidden="true"> <%= t "navbar.booking" %></span></a></li>
+            <li><a href="<%= pass_path %>"><span class="glyphicon glyphicon-fire" aria-hidden="true"> <%= t "navbar.pass" %></span></a></li>
             <li><a href="<%= gym_path %>"><span class="glyphicon glyphicon-home" aria-hidden="true"> Gym</span></a></li>
-            <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> Priser</span></a></li>
-            <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> Kiropraktik</span></a></li>
-            <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> Övrigt</span></a></li>
-            <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> Kontakt</span></a></li>
+            <li><a href="<%= pricing_path %>"><span class="glyphicon glyphicon-credit-card" aria-hidden="true"> <%= t "navbar.priser" %></span></a></li>
+            <li><a href="<%= massage_path %>"><span class="glyphicon glyphicon-bed" aria-hidden="true"> <%= t "navbar.kiropraktik" %></span></a></li>
+            <li><a href="<%= ovrigt_path %>"><span class="glyphicon glyphicon-bullhorn" aria-hidden="true"> <%= t "navbar.ovrigt" %></span></a></li>
+            <li><a href="#0" class="cd-btn"><span class="glyphicon glyphicon-time" aria-hidden="true"> <%= t "navbar.kontakt" %></span></a></li>
+            <li><%= link_to_unless_current "ENG", locale: "en" %></li>
+            <li><%= link_to_unless_current "SWE", locale: "sv" %></li>
             <% if logged_in? %>
             <li><%= link_to "Logga ut", logout_path, method: "delete" %></li>
             <li><%= link_to "Ändra Text", contents_path %></li>
-
             <% end %>
           </ul>
         </div><!--/.nav-collapse -->

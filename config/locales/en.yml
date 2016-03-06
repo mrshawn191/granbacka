@@ -1,23 +1,67 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  language:
+    swe: "Swedish"
+    eng: "English"
+  schema:
+    0900: "Gymnastic elders - Inger"
+    test1: "Pilates* Sofina"
+    test2: "Pulsinterval 75 min Pernilla"
+    test3: "Bicykling 45min* Bengt"
+    test4: "Gymcircle 45min* Sofina"
+    test5: "Gymcircle puls* 45 min Caroline"
+    test6: "Pulsinterval bas Peder"
+    test7: "Gymcircle express 30min* Marie"
+    test8: "Gymcircle express* 30min Bengt"
+    test9: "Pulsinterval Jenny"
+    test10: "Condition express 30 min* Therese"
+    test11: "Crossworkout* Veronica"
+    test12: "Pulsinterval Sandra"
+    test13: "Bicykling* 45 min Marie/Bettan"
+    test14: "Strength express 30min* Therese"
+    test15: "Intervalstrength* Veronica"
+    test16: "Core on ball* Veronica"
+    test17: "Yin Yoga 45min* Sandra"
+    test18: "Strength Express 30min Veronica"
+    title: "Springschedule 2016"
+    monday: "Monday"
+    tuesday: "Tuesday"
+    wednesday: "Wednesday"
+    thursday: "Thursday"
+    friday: "Friday"
+    saturday: "Saturday"
+    sunday: "Sunday" 
+  startsida:
+    header1: "About Granbacka"
+    header2: "Our history."
+    header3: "Established since 1970."
+    header4: "We are up to date."
+    header5: "Our goals and ambition."
+    header6: "Where we are located."
+    body1: "Granbacka Gym and Motion has been around since 1970, when it was run by recreation department of the city in Solna. In 2000 we took over the operation and today we offer a wide range of training both workouts and individual training led by our talented instructors. You also have access to massage and chiropractic."
+    body2: "We follow closely the development of various training methods and trends to constantly offer you the latest on the training front. Our opening hours of the gym are generous for you to catch the train at times that suit you."
+    body3: "Our ambition with Granbacka is that there will be a social gathering with high ceiling and laughs. So we also organize other activities such as meetings, celebrations and the annual ski trip to Sälen"
+    body4: "We are located at Emmylundsvägen 4 in Huvudsta/Solna. The nearest metro station is Västra skogen and from there it's 2-3 min walk to us. Do you have more questions feel free to ask at 08-82 34 39 or info@granbacka.com"
+  navbar:
+    schema: "Schedule"
+    bokning: "Booking"
+    pass: "Workouts"
+    priser: "Prices"
+    ovrigt: "Others"
+    kiropraktik: "Chiropractic"
+    kontakt: "Contact"
+  pricing: 
+    title: "Our prices"
+    grouptraining: "Grouptraining & Gym"
+    reduced: "Students, retiree, job seeker and parental leave"
+    others: "Other Prices"
+    yearcard: "Yearcard can be freezed once up to 30 days. (only if you are not autogiro) When you apply for autogiro, binding period is 12 months."
+    klippcard: "All cards (with exception to klippcards) are personal and cannot be sold or hand over. They are valid up to 1 year."
+    agelimit: "The approval age for strength training is 16 years old. (Exception can be made with the approval of parent)"
+    yearprice: "12 month"
+    halfprice: "6 month"
+    quartprice: "4 month"
+    klippprice: "10 X cards (valid for 1 year)"
+    onetimeprice: "One time cost"
+    goldencard: "Goldencard"
+    month: "month"
